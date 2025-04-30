@@ -20,5 +20,3 @@ As such the distance traveled by citizen $i$ will be $|S_i-x|+|T_i-x|+1$ as the 
 
 
 
-
-TESTING
