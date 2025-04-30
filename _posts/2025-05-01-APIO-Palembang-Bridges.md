@@ -3,7 +3,7 @@ title: "APIO-Palembang-Bridges"
 date: 2025-05-01
 ---
 
-link: https://codebreaker.xyz/problem/ 
+link: https://codebreaker.xyz/problem/bridge_apio15
 
 Abridged statement: lazy, and the statement is quite clear 🤡
 
