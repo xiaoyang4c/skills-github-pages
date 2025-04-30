@@ -1,7 +1,6 @@
 ---
 title: "APIO-Palembang-Bridges"
 date: 2025-04-25
-layout: posts
 ---
 
 
