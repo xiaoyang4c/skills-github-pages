@@ -1,9 +1,9 @@
 ---
-title: "APIO-Palembang-Bridges"
+title: "APIO-Bridges15"
 date: 2025-04-25
 ---
 
-link: https://codebreaker.xyz/problem/ 
+link: https://codebreaker.xyz/problem/bridge_apio15
 
 Abridged statement: lazy, and the statement is quite clear 🤡
 
