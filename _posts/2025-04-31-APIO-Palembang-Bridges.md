@@ -9,14 +9,14 @@ link: https://codebreaker.xyz/problem/
 
 Abridged statement: lazy, and the statement is quite clear 🤡
 
-$K=1$ case:  
+$$K=1$$ case:  
 
 
-Let the position of the bridge be $x$.
-If citizen $i$'s office and house are in the same zone, the distance that citizen has to travel is obviously $|S_i-T_i|$.  
-Now let us consider the case where citizen $i$'s office and house are in different zones. 
-Citizen $i$ would have to travel from their house at $S_i$ to the bridge at $x$, then travel from the bridge at $x$ to their office at $T_i$.  
-As such the distance traveled by citizen $i$ will be $|S_i-x|+|T_i-x|+1$ as the width of the river is equal to $1$ too.
+Let the position of the bridge be $$x$$.
+If citizen $$i$$'s office and house are in the same zone, the distance that citizen has to travel is obviously $$|S_i-T_i|$$.  
+Now let us consider the case where citizen $$i$$'s office and house are in different zones. 
+Citizen $$i$$ would have to travel from their house at $S_i$ to the bridge at $$x$$, then travel from the bridge at $$x$$ to their office at $$T_i$$.  
+As such the distance traveled by citizen $$i$$ will be $$|S_i-x|+|T_i-x|+1$$ as the width of the river is equal to $$1$$ too.
 
 
 
