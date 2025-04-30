@@ -1,40 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>{{ site.title }} | {{ page.title }}</title>
-  <!-- MathJax Configuration -->
-  <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    }
-  };
-  </script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-  <!-- Your existing CSS/theme links -->
-  {{ site.head }}
-</head>
-<body>
-  <header>
-    <h1>{{ site.title }}</h1> <!-- "skills-github-pages" -->
-    <nav>...</nav>
-  </header>
+---
+layout: default
+---
 
-  <article>
-    <h2>{{ page.title }}</h2>
-    <time datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: "%b %d, %Y" }}
-    </time>
-    {{ content }}
-  </article>
+<!-- Just add MathJax to the existing theme -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-  <footer>...</footer>
-</body>
-</html>
+<article>
+  <h1>{{ page.title }}</h1>
+  <time>{{ page.date | date_to_string }}</time>
+  {{ content }}
+</article>
