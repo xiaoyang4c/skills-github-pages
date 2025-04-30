@@ -1,10 +1,7 @@
 ---
 title: "APIO-Palembang-Bridges"
 date: 2025-04-31
-mathjax: true
 ---
-
-
 
 link: https://codebreaker.xyz/problem/ 
 
