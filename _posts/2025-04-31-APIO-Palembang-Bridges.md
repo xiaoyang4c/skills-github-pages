@@ -1,6 +1,7 @@
 ---
 title: "APIO-Palembang-Bridges"
 date: 2025-04-31
+layout: post
 ---
 
 link: https://codebreaker.xyz/problem/ 
