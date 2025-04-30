@@ -2,7 +2,9 @@
 title: "APIO-Palembang-Bridges"
 date: 2025-04-31
 ---
-
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 link: https://codebreaker.xyz/problem/ 
 
 Abridged statement: lazy, and the statement is quite clear 🤡
