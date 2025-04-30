@@ -9,7 +9,7 @@ link: https://codebreaker.xyz/problem/
 
 Abridged statement: lazy, and the statement is quite clear 🤡
 
-$$K=1$$ case:  
+$K=1$ case:  
 
 
 Let the position of the bridge be $x$.
