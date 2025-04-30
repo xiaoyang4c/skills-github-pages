@@ -1,8 +1,10 @@
 ---
 title: "APIO-Palembang-Bridges"
-date: 2025-04-25
+date: 2025-04-31
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 
 link: https://codebreaker.xyz/problem/ 
 
@@ -17,4 +19,5 @@ Now let us consider the case where citizen $i$'s office and house are in differe
 Citizen $i$ would have to travel from their house at $S_i$ to the bridge at $x$, then travel from the bridge at $x$ to their office at $T_i$.  
 As such the distance traveled by citizen $i$ will be $|S_i-x|+|T_i-x|+1$ as the width of the river is equal to $1$ too.
 
+FKKKKKKKK
 
