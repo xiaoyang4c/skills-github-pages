@@ -19,5 +19,3 @@ Citizen $i$ would have to travel from their house at $S_i$ to the bridge at $x$,
 As such the distance traveled by citizen $i$ will be $|S_i-x|+|T_i-x|+1$ as the width of the river is equal to $1$ too.
 
 
-
-wtf 
