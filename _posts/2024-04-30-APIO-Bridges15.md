@@ -25,11 +25,12 @@ $$\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1)$$
 for each citizen $i$ (whose office and house are in the same zone) and $j$ (whose office and house are in different zones).
 
 Now we just have to figure out how to choose $x$.  
-We shall boldly guess that $x$ shall be the median in the set of all $S_j$ and $T_j$. Turns out this will minimise $\sum (|S_j-x| + |T_j-x| + 1)$.
+Claim $1$: The optimal $x$ to minimise $\sum (|S_j-x| + |T_j-x| + 1)$ is the median in the set of all $S_j$ and $T_j$.  
 
-Proof: 
+Proof $1$: 
 We first reduce the problem to:  
 Given a sorted array $A$ of $n$ numbers, find a value $x$ such that $\sum |A[i] - x|$ will be minimised.  
+Note: we just ignore the $+1$ here and just consider the case for $\sum (|S_j-x| + |T_j-x|)$ as the $1$ could just be added back to final answer regardless of $x$.  
 Assume $y$ is the optimal value for $x$ and $y != A[\frac{n}{2}] $  
 This implies that there will be $>\lfloor\frac{n}{2}\rfloor$ values of $A[i]$ that are either greater than $y$ or smaller than $y$.  
 If there are $>\lfloor\frac{n}{2}\rfloor$ that are greater than $y$, incrementing $y$ by $1$ will lead to $\sum |A[i] - x|$ to either decrease, or remain unchanged as the sum will decrease by at most $\lfloor\frac{n}{2}\rfloor$ and increase by at least $\lceil\frac{n}{2}\rceil$.  
@@ -45,3 +46,15 @@ $\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1|)$ for the final answer.
 
 $K=2$ case:
 The author as not attempted this part and will likely die doing so. Please wish him all the best. 
+
+Claim $2$: It is optimal that a bridge is built on citizen $i$'s house or office for some $i$  
+Proof $2$:  
+The idea is the same as our median argument. Placing a bridge from a building that is not a house or an office to the nearest building that is one will lead to the sum of distances traveled by all citizens $j$ to remain the same or decrease. 
+
+Now we want to consider given 2 bridges located at positions $L$ and $R$, which bridge would citizen $j$ choose to cross in order to minimise their travel time.  
+Doing some algebra, we get citizen $j$ would choose to travel via the left bridge $L$ iff $|S_j-L|+|T_j-L|<|S_j-R|+|T_j-R|$ and travel via the right bridge $R$ otherwise.  
+This looks very similar to the problem we mentioned at the start of proof $2$, but we have to choose between $L$ and $R$ for values of $x$ instead.  
+The optimal value $x$ to minimise $|S_j-x|+|T_j-x|$ would be the median of the 2 values $\frac{S_i+T_i}{2}$, and the closer a value $y$ is to $x$ (the smaller the value of $|x-y|$), the smaller the value of $|S_j-y|+|T_j-y|$. This can be proved with the same argument in proof $2$. 
+
+As such we can make a crucial observation:  
+Citizen $j$ will choose to use whichever bridge that is closest to $\frac{S_i+T_i}{2}$!
