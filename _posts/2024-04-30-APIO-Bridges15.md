@@ -4,6 +4,9 @@ date: 2025-04-25
 layout: default
 ---
 
+{% include mathjax.html %}
+
+
 link: https://codebreaker.xyz/problem/bridge_apio15
 
 Abridged statement: lazy, and the statement is quite clear 🤡
