@@ -57,4 +57,4 @@ This looks very similar to the problem we mentioned at the start of proof $2$, b
 The optimal value $x$ to minimise $|S_j-x|+|T_j-x|$ would be the median of the 2 values $\frac{S_i+T_i}{2}$, and the closer a value $y$ is to $x$ (the smaller the value of $|x-y|$), the smaller the value of $|S_j-y|+|T_j-y|$. This can be proved with the same argument in proof $2$. 
 
 As such we can make a crucial observation:  
-Citizen $j$ will choose to use whichever bridge that is closest to $\frac{S_i+T_i}{2}$!
+Citizen $j$ will choose to use whichever bridge that is closest to $\frac{S_i+T_i}{2}$
