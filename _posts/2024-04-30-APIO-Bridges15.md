@@ -30,4 +30,4 @@ We shall boldly guess that $x$ shall be the median in the set of all $S_j$ and $
 Proof: 
 We first reduce the problem to:  
 Given a sorted array $A$ of $n$ numbers, find a value $x$ such that $\sum |A_i - x|$ will be minimised.  
-Assume $y$ is the optimal value for $x$ and $y != A_\frac{n/2} $
+Assume $y$ is the optimal value for $x$ and $y != A_\frac{n}{2} $
