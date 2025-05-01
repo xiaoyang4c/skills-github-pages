@@ -47,7 +47,7 @@ $\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1|)$ for the final answer.
 $K=2$ case:
 The author as not attempted this part and will likely die doing so. Please wish him all the best. 
 
-Claim $2$: It is optimal that a bridge is built on citizen $i$'s house or office for some $i$  
+Claim $2$: It is optimal that a bridge is built on citizen $j$'s house or office for some $j$  
 Proof $2$:  
 The idea is the same as our median argument. Placing a bridge from a building that is not a house or an office to the nearest building that is one will lead to the sum of distances traveled by all citizens $j$ to remain the same or decrease. 
 
