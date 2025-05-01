@@ -24,8 +24,9 @@ $$\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1)$$
 
 for each citizen $i$ (whose office and house are in the same zone) and $j$ (whose office and house are in different zones).
 
-Now we just have to figure out how to choose $x$. We shall boldly guess that $x$ shall be the median in the set of all $S_j$ and $T_j$. Turns out this will minimise $\sum (|S_j-x| + |T_j-x| + 1)$.
+Now we just have to figure out how to choose $x$.  
+We shall boldly guess that $x$ shall be the median in the set of all $S_j$ and $T_j$. Turns out this will minimise $\sum (|S_j-x| + |T_j-x| + 1)$.
 
 Proof: 
 We first reduce the problem to:  
-Given an array $A$ of $n$ numbers, find a value $x$ such that $\sum |A_i - x$| will be minimised.  
+Given an array $A$ of $n$ numbers, find a value $x$ such that $\sum |A_i - x|$ will be minimised.  
