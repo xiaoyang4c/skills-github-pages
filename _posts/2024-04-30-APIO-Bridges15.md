@@ -37,3 +37,9 @@ Similarly, if there are $>\lfloor\frac{n}{2}\rfloor$ that are smaller than $y$, 
 We can keep repeating this process until $y$ reaches the median value of $A[\frac{n}{2}]$, which is when there will no longer be $>\lfloor\frac{n}{2}\rfloor$ values of $A[i]$ that are either greater than $y$ or smaller than $y$.  
 Thus we can conclude that picking $x$ to be the median value in the array is optimal.  
 (This idea is just marginalist principle in economics)
+
+Thus we will just sort the array consisting of all the value of $S_j$ and $T_j$, and set $x$ to the median value in that array.  We can then print $\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1)$ for the final answer.  
+
+
+$K=2$ case:
+The author as not attempted this part and will likely die doing so. Please wish him all the best. 
