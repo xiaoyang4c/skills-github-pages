@@ -20,7 +20,7 @@ Citizen $j$ would have to travel from their house at $S_j$ to the bridge at $x$,
 Hence the distance traveled by citizen $i$ will be $|S_j-x|+|T_j-x|+1$ as the width of the river is equal to $1$ too.
 As such the total distance traveled by all the citizens will be:  
 
-$$\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1)$$ 
+$$\sum |S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1)$$ 
 
 for each citizen $i$ (whose office and house are in the same zone) and $j$ (whose office and house are in different zones).
 
