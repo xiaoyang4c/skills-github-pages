@@ -41,7 +41,6 @@ Thus we can conclude that picking $x$ to be the median value in the array is opt
 Thus we will just sort the array consisting of all the value of $S_j$ and $T_j$, and set $x$ to the median value in that array.  We can then print 
 $\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1|)$ for the final answer.  
 
-WTF WHY FORMAT DIE
 
 
 $K=2$ case:
