@@ -85,4 +85,25 @@ Now we just have to manipulate some algebra for magic to happen.
  Notice that $P_z[z]$ is both subtracted and added $z$ times in the resulting sum. As such we are able to simplify the expression even more:  
 
  $$\sum_{j=1}^{z}(P_z[z]|-P_z[j]) + \sum_{j=z+1}^{2z}(P_z[j]-P_z[z]) = \sum_{j=z+1}^{2z}(P_z[j]) - \sum_{j=1}^{z}(P_z[j])$$  
- 
+
+ Looking at this expression, we can make one of our last few observations required for the question.  
+ We realise $\sum_{j=1}^{z}(P_z[j])$ is the sum of all elements $\leq P_z[j]$ and $\sum_{j=z+1}^{2z}(P_z[j])$ is sum of all elements $> P_z[z]$.  
+ We then realise we can maintain the 2 sums with a median heap data structure involving 2 multisets/priority_queues.  
+ This allows us to maintain the sums and have an $O(log n)$ transition as we iterate through $z$ in $A$.  
+ We will thus be able to compute all $\sum_{j=z+1}^{2z}(P_z[j]) - \sum_{j=1}^{z}(P_z[j])$ in $O(n log n)$ time.  
+ For each $z$ we shall store $\sum_{j=z+1}^{2z}(P_z[j]) - \sum_{j=1}^{z}(P_z[j])$ in a prefix array $pre[]$ at index $pre[z]$.  
+
+ We shall then repeat the same idea but in reverse order (from $n$ to $1$) to obtain all the suffix values and store the sum of distances for citizens traveling through bridge $R$ in the suffix array $suff[]$. 
+
+ The minimum sum of distances of all citizens that need to cross bridges would thus be $\min(pre[j]+suff[j+1])$ for some $j$ in $[1,n]$. (We should have already for the total distance of $n$ due to people traveling across the bridge).  
+
+Thus we can have the formula for our final answer :
+
+$$\sum (|S_i-T_i|) + n + \min(pre[j]+suff[j+1])$$
+
+where:
+$i$ are citizens whose office and house are in the same zone and hence do not need to cross the bridge
+$j$ are citizens whose office and house are in difference zones and need to cross the bridge
+$n$ is the number of citizens who have to cross the bridge to reach their house/office 
+
+Omg I'm finally done with this question. I spent 2 days learning how to set up latex, solving and typing this question. Hopefully it's worth it, the problem is quite cool. I am too lazy to format my previous blog, but ig it will be funny to look back at my progess 🤡. Idk if this will ever be useful, I hope it will but it probably helped me get better at explaining and proving ideas. 
