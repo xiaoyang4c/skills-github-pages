@@ -74,10 +74,14 @@ Since $A_j$ is a pair of values ${(S_j,T_j)}$, the sum of distances in the prefi
 $\sum_{j=1}^{z} (|S_j-P_z[z]| + |T_j-P_z[z]|)$ = $\sum_{j=1}^{2z}(|P_z[j]-P_z[z]|)$
 Now we just have to manipulate some algebra for magic to happen. 
 
- $\sum_{j=1}^{2z}(|P_z[j]-P_z[z]|)$ = $\sum_{j=1}^{z}(|P_z[j]-P_z[z]|) + \sum_{j=z+1}^{2z}(|P_z[j]-P_z[z]|)$  
+ $\sum_{j=1}^{2z}(|P_z[j]-P_z[z]|) = $
+ $\sum_{j=1}^{z}(|P_z[j]-P_z[z]|) +
+ \sum_{j=z+1}^{2z}(|P_z[j]-P_z[z]|)$  
 
  
- Since $P_z$ is sorted, $P_z[j] < P_z[z]$ for all $j < z$ and $P_z[j] > P_z[z]$, we can eliminate the $| |$ signs:  
+ Since $P_z$ is sorted, 
+ $P_z[j] < P_z[z]$ for all $j < z$
+ and $P_z[j] > P_z[z]$, we can eliminate the $| |$ signs:  
 
  $\sum_{j=1}^{z}(|P_z[j]-P_z[z]|) + \sum_{j=z+1}^{2z}(|P_z[j]-P_z[z]|) = $
  $\sum_{j=1}^{z}(P_z[z]|-P_z[j]) + \sum_{j=z+1}^{2z}(P_z[j]-P_z[z])$ 
