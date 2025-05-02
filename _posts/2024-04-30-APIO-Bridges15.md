@@ -81,7 +81,8 @@ Now we just have to manipulate some algebra for magic to happen.
  $P_z[j] < P_z[z]$ for all $j < z$
  and $P_z[j] > P_z[z]$, we can eliminate the $|\:|$ signs:  
 
- $$\sum_{j=1}^{z}(|P_z[j]-P_z[z]|) + \sum_{j=z+1}^{2z}(|P_z[j]-P_z[z]|) = \sum_{j=1}^{z}(P_z[z]|-P_z[j]) + \sum_{j=z+1}^{2z}(P_z[j]-P_z[z])$$ 
+ $$\sum_{j=1}^{z}(|P_z[j]-P_z[z]|) + \sum_{j=z+1}^{2z}(|P_z[j]-P_z[z]|) = \sum_{j=1}^{z}(P_z[z]|-P_z[j]) + \sum_{j=z+1}^{2z}(P_z[j]-P_z[z])$$  
+ Notice that $P_z[z]$ is both subtracted and added $z$ times in the resulting sum. As such we are able to simplify the expression even more:  
 
- 
+ $$\sum_{j=1}^{z}(P_z[z]|-P_z[j]) + \sum_{j=z+1}^{2z}(P_z[j]-P_z[z]) = \sum_{j=z+1}^{2z}(P_z[j]) - sum_{j=1}^{z}(P_z[j])$$  
  
