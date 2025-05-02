@@ -112,4 +112,4 @@ The final time complexity will be $O(N log N)$ where $N$ is the total number of 
 
 
 ----------
-Omg I'm finally done with this question. I spent 2 days learning how to set up latex, solving and typing this question. I hope it's worth it, the problem is quite cool. I am too lazy to format my previous blog, but ig it will be funny to look back at my progress 🤡. Idk if this will ever be useful, I hope it will but it probably helped me get better at explaining and proving ideas. 
+Omg I'm finally done with this question. I spent 2 days learning how to set up latex, solving and typing this question. I hope it's worth it, the problem is quite cool. I am too lazy to format my previous blog, but ig it will be funny to look back at my progress 🤡. Idk if this will ever be useful, I hope it will but it probably helped me get better at explaining and proving ideas. Kinda funny that the key ideas of this problem can be proved with just marginalist principle 🤡.
