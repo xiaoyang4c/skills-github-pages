@@ -82,7 +82,7 @@ Now we just have to manipulate some algebra for magic to happen.
  and $P_z[j] > P_z[z]$, we can eliminate the $|\,|$ signs:  
 
  $$\sum_{j=1}^{z}(|P_z[j]-P_z[z]|) + \sum_{j=z+1}^{2z}(|P_z[j]-P_z[z]|) = \sum_{j=1}^{z}(P_z[z]|-P_z[j]) + \sum_{j=z+1}^{2z}(P_z[j]-P_z[z])$$  
- Notice that $P_z[z]$ is both subtracted and added $z$ times in the resulting sum. As such we are able to simplify the expression even more:  
+ Notice that $P_z[z]$ is both subtracted and added $z$ times in the resulting sum. Hence we can simplify the expression even more:  
 
  $$\sum_{j=1}^{z}(P_z[z]|-P_z[j]) + \sum_{j=z+1}^{2z}(P_z[j]-P_z[z]) = \sum_{j=z+1}^{2z}(P_z[j]) - \sum_{j=1}^{z}(P_z[j])$$  
 
@@ -101,9 +101,9 @@ Thus we can have the formula for our final answer :
 
 $$\sum (|S_i-T_i|) + n + \min(pre[j]+suff[j+1])$$
 
-where:
+for all $i,j$ where:
 $i$ are citizens whose office and house are in the same zone and hence do not need to cross the bridge  
-$j$ are citizens whose office and house are in difference zones and need to cross the bridge  
+$j$ are citizens whose office and house are in different zones and need to cross the bridge  
 $n$ is the number of citizens who have to cross the bridge to reach their house/office  
 
 The final time complexity will be $O(N \log N)$ where $N$ is the total number of citizens. 
