@@ -31,7 +31,7 @@ Proof $1$:
 We first reduce the problem to:  
 Given a sorted array $A$ of $n$ numbers, find a value $x$ such that $\sum |A[i] - x|$ will be minimised.  
 Note: we just ignore the $+1$ here and just consider the case for $\sum (|S_j-x| + |T_j-x|)$ as the $1$ could just be added back to final answer regardless of $x$.  
-Assume $y$ is the optimal value for $x$ and $y != A[\frac{n}{2}] $  
+Assume $y$ is the optimal value for $x$ and $y \neq A[\frac{n}{2}] $  
 This implies that there will be $>\lfloor\frac{n}{2}\rfloor$ values of $A[i]$ that are either greater than $y$ or smaller than $y$.  
 If there are $>\lfloor\frac{n}{2}\rfloor$ that are greater than $y$, incrementing $y$ by $1$ will lead to $\sum |A[i] - x|$ to either decrease, or remain unchanged as the sum will decrease by at most $\lfloor\frac{n}{2}\rfloor$ and increase by at least $\lceil\frac{n}{2}\rceil$.  
 Similarly, if there are $>\lfloor\frac{n}{2}\rfloor$ that are smaller than $y$, decrementing $y$ by $1$ will lead to $\sum |A[i] - x|$ decreasing via the same logic.  
