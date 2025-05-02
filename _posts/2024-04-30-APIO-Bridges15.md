@@ -59,7 +59,7 @@ The optimal value $x$ to minimise $|S_j-x|+|T_j-x|$ would be the median of the 2
 As such we can make a crucial observation:  
 Citizen $j$ will choose to use whichever bridge that is closest to $\frac{S_j+T_j}{2}$  
 Thus if we sort the citizens by $S_j+T_j$, we realise there will be a prefix of people who will choose bridge $L$ and a suffix who will choose bridge $R$.  
-Let $A$ denote the sorted array of citizens who need to cross a bridge, where $A_j = {S_j,T_j}$, and size of $A = n$ ($N$ shall denote the total number of citizens instead)
+Let $A$ denote the sorted array of citizens who need to cross a bridge, where $A_j = {(S_j,T_j)}$, and size of $A = n$ ($N$ shall denote the total number of citizens instead)
 We can iterate through all the possible places $z$ to split the people into a prefix and suffix.  
 Citizens in $A[1,...,z]$ shall go through bridge $L$  
 Citizens in $A[z+1,...,n]$ shall go through bridge $R$
@@ -70,6 +70,6 @@ We first consider the case for all possible prefix sections.
 Let the ordered set $P_z$ denote all of the positions of buildings in $A[1,...,z]$.  
 $P_z$ will thus be of the size $2z$.  
 We know the cost of all citizens in the prefix traveling through $L$ is minimised when the bridge is built at the median position in $P_z, P_z[z]$. 
-Since $A_j$ is a pair of values ${S_j,T_j}$
+Since $A_j$ is a pair of values ${(S_j,T_j)}$
 The sum of distances in the prefix be $\sum (|S_j-P_z[z]| + |T_j-P_z[z]|)$ = $\sum (|P_z[j]-P_z[z]|)$
 
