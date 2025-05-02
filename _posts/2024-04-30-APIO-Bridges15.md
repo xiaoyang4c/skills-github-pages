@@ -95,15 +95,18 @@ Now we just have to manipulate some algebra for magic to happen.
 
  We shall then repeat the same idea but in reverse order (from $n$ to $1$) to obtain all the suffix values and store the sum of distances for citizens traveling through bridge $R$ in the suffix array $suff[]$. 
 
- The minimum sum of distances of all citizens that need to cross bridges would thus be $\min(pre[j]+suff[j+1])$ for some $j$ in $[1,n]$. (We should have already for the total distance of $n$ due to people traveling across the bridge).  
+The minimum sum of distances of all citizens that need to cross bridges would thus be $\min(pre[j]+suff[j+1])$ for some $j$ in $[1,n]$. (We should have already accounted for the distance of $n$ due to people traveling across the bridge).  
 
 Thus we can have the formula for our final answer :
 
 $$\sum (|S_i-T_i|) + n + \min(pre[j]+suff[j+1])$$
 
 where:
-$i$ are citizens whose office and house are in the same zone and hence do not need to cross the bridge
-$j$ are citizens whose office and house are in difference zones and need to cross the bridge
-$n$ is the number of citizens who have to cross the bridge to reach their house/office 
+$i$ are citizens whose office and house are in the same zone and hence do not need to cross the bridge  
+$j$ are citizens whose office and house are in difference zones and need to cross the bridge  
+$n$ is the number of citizens who have to cross the bridge to reach their house/office  
 
-Omg I'm finally done with this question. I spent 2 days learning how to set up latex, solving and typing this question. Hopefully it's worth it, the problem is quite cool. I am too lazy to format my previous blog, but ig it will be funny to look back at my progess 🤡. Idk if this will ever be useful, I hope it will but it probably helped me get better at explaining and proving ideas. 
+The final time complexity will be $O(N log N)$ where $N$ is the total number of citizens. 
+
+----------
+Omg I'm finally done with this question. I spent 2 days learning how to set up latex, solving and typing this question. I hope it's worth it, the problem is quite cool. I am too lazy to format my previous blog, but ig it will be funny to look back at my progress 🤡. Idk if this will ever be useful, I hope it will but it probably helped me get better at explaining and proving ideas. 
