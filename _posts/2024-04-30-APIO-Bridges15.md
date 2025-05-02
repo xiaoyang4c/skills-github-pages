@@ -89,7 +89,7 @@ Now we just have to manipulate some algebra for magic to happen.
  Looking at this expression, we can make one of our last few observations required for the question.  
  We realise $\sum_{j=1}^{z}(P_z[j])$ is the sum of all elements $\leq P_z[j]$ and $\sum_{j=z+1}^{2z}(P_z[j])$ is sum of all elements $> P_z[z]$.  
  We then realise we can maintain the 2 sums with a median heap data structure involving 2 multisets/priority_queues.  
- This allows us to maintain the sums and have an $O(log n)$ transition as we iterate through $z$ in $A$.  
+ This allows us to maintain the sums and have an $O(\log n)$ transition as we iterate through $z$ in $A$.  
  We will thus be able to compute all $\sum_{j=z+1}^{2z}(P_z[j]) - \sum_{j=1}^{z}(P_z[j])$ in $O(n \log n)$ time.  
  For each $z$ we shall store $\sum_{j=z+1}^{2z}(P_z[j]) - \sum_{j=1}^{z}(P_z[j])$ in a prefix array $pre[]$ at index $pre[z]$.  
 
