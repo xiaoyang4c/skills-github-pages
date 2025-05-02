@@ -108,5 +108,8 @@ $n$ is the number of citizens who have to cross the bridge to reach their house/
 
 The final time complexity will be $O(N log N)$ where $N$ is the total number of citizens. 
 
+[Code](https://oj.uz/submission/1194321)
+
+
 ----------
 Omg I'm finally done with this question. I spent 2 days learning how to set up latex, solving and typing this question. I hope it's worth it, the problem is quite cool. I am too lazy to format my previous blog, but ig it will be funny to look back at my progress 🤡. Idk if this will ever be useful, I hope it will but it probably helped me get better at explaining and proving ideas. 
