@@ -67,9 +67,9 @@ Citizens in $A[z+1,...,n]$ shall go through bridge $R$
 
 We then recall our solution for the $K=1$ case and realise that it is optimal to build the 2 bridges in the median positions in the prefix and suffix sections respectively. 
 We first consider the case for all possible prefix sections.  
-Let the ordered set $P_z$ denote all of the positions of buildings in $A[1,...,z]$.  
+Let the ordered set $P_z$ denote all of the positions of buildings in $A[1,...,z]$.   
 $P_z$ will thus be of the size $2z$.  
-We know the cost of all citizens in the prefix traveling through $L$ is minimised when the bridge is built at the median position in $P_z, P_z[z]$. 
-Since $A_j$ is a pair of values ${(S_j,T_j)}$
-The sum of distances in the prefix be $\sum (|S_j-P_z[z]| + |T_j-P_z[z]|)$ = $\sum (|P_z[j]-P_z[z]|)$
+We know the cost of all citizens in the prefix traveling through $L$ is minimised when the bridge is built at the median position in $P_z, P_z[z]$.  
+Since $A_j$ is a pair of values ${(S_j,T_j)}$, the sum of distances in the prefix be:  
+$\sum {j=1}^{z} (|S_j-P_z[z]| + |T_j-P_z[z]|)$ = $\sum {j=1}^{2z}(|P_z[j]-P_z[z]|)$
 
