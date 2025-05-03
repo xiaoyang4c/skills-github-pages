@@ -44,8 +44,7 @@ $\sum (|S_i-T_i|) + \sum (|S_j-x| + |T_j-x| + 1|)$ for the final answer.
 
 
 
-$K=2$ case:
-The author as not attempted this part and will likely die doing so. Please wish him all the best. 
+$K=2$ case:  
 
 Claim $2$: It is optimal that a bridge is built on citizen $j$'s house or office for some $j$  
 Proof $2$:  
