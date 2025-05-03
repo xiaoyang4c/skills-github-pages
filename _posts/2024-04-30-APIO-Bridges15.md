@@ -100,7 +100,7 @@ Thus we can have the formula for our final answer :
 
 $$\sum (|S_i-T_i|) + n + \min(pre[j]+suff[j+1])$$
 
-for all $i,j$ where:
+for all $i,j$ where:  
 $i$ are citizens whose office and house are in the same zone and hence do not need to cross the bridge  
 $j$ are citizens whose office and house are in different zones and need to cross the bridge  
 $n$ is the number of citizens who have to cross the bridge to reach their house/office  
