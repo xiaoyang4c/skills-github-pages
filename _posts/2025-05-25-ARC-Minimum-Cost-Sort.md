@@ -33,7 +33,7 @@ The only additional thing we have to note is that after moving an element all th
 This implies that we need a way to constantly update the position $j$ of element $P_i$.  
 
 
-To do this we can use a "classic" trick with a fenwick tree (that I admittedly forgot when doing this problem 🤡).  
+To do this we can use a "classic" trick with a fenwick tree (that I admittedly forgot when doing this problem 🤡):  
 Consider building a fenwick tree consisting an array of 1s.  
 We aim to let the position of an element $P_i$ be $query(pos[P_i])$ where pos[x] is the initial position of x in the permutation $P$.  
 Notice that as we iterate through $P_i$ in descending order and move them towards the right, we can just update $pos[P_i]$ to be 0 in the array so that all the elements to its right can be "shifted" to the left by 1.  
