@@ -1,11 +1,11 @@
 ---
 title: "ARC-Minimum-Cost-Sort"
-date: 2025-05-02
+date: 2025-05-25
 layout: default
 ---
 
 {% include mathjax.html %}
-//I got lazy ~sick~ and didn't do IO for quite some time 🤡.  
+//I got lazy ~~sick~~ and didn't do IO for quite some time 🤡.  
 link: https://atcoder.jp/contests/arc194/tasks/arc194_b
 
 Abridged statement: the statement is 1 line so uhh no
@@ -23,7 +23,7 @@ Expanding we get:
 
 $$\frac{P_i^2 - P_i - i^2+i}{2} = \frac{P_i^2 - i^2 - (P_i-i)}{2}= \frac{(P_i-i)(P_i+i)-(P_i-i)}{2} = \frac{(P_i-i)(P_i+i-1)}{2}$$  
 
-Now we can make another ~wild guess~ observation:
+Now we can make another ~~wild guess~~ observation:
 We should move the elements to their respective position in descending order. The reason I made this guess is just that it will not mess up the ordering between the elements when you just take an element and keep swapping it with the element to the right till unable to do so (which is when it is already in its place).  
 I have no clue for the proof 😅😎.  
 This conveniently also ensures that $P_i$ will always be $>= i$  hence allowing us to use our formula without any additional cases.  
@@ -43,7 +43,7 @@ Thus we just have to find  $\sum \frac{(P_i-j)(P_i+j-1)}{2}$ as we iterate $P_i$
 
 
 
-I believe that the fenwick tree trick is also used in IOI 2019 shoes (https://oj.uz/problem/view/IOI19_shoes) and EGOI 2021 Luna Likes Love (https://codeforces.com/gym/103148/problem/B). A bit embarrassing for me to not instantly see this considering I used the EGOI question in a lecture during Deccourse oops. 
+I believe that the fenwick tree trick is also used in [IOI 2019 shoes](https://oj.uz/problem/view/IOI19_shoes) and [EGOI 2021 Luna Likes Love](https://codeforces.com/gym/103148/problem/B). A bit embarrassing for me to not instantly see this considering I used the EGOI question in a lecture during Deccourse oops. 
 
 
 [Code](https://atcoder.jp/contests/arc194/submissions/66169581)
