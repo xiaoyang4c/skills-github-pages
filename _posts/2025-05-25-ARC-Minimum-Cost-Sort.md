@@ -21,7 +21,7 @@ $$(\frac{P_i-i}{2})(i+P_i-1)$$
 
 Expanding we get:
 
-$$(\frac{P_i^2 - P_i - i^2+i}{2})$$  
+$$(\frac{P_i^2 - P_i - i^2+i}{2}) = \frac{P_i^2 - i^2 - (P_i-i)}{2}= \frac{(P_i-i)(P_i+i)-(P_i-i)}{2} = \frac{(P_i-i)(P_i+i-1)}{2}$$  
 
 
 [Code](https://atcoder.jp/contests/arc194/submissions/66169581)
