@@ -35,11 +35,11 @@ This implies that we need a way to constantly update the position $j$ of element
 
 To do this we can use a "classic" trick with a fenwick tree (that I admittedly forgot when doing this problem 🤡):  
 Consider building a fenwick tree consisting an array of 1s.  
-We aim to let the position of an element $P_i$ be $query(pos[P_i])$ where pos[x] is the initial position of x in the permutation $P$.  
+We aim to let the position $j$ of an element $P_i$ be $query(pos[P_i])$ where pos[x] is the initial position of x in the permutation $P$.  
 Notice that as we iterate through $P_i$ in descending order and move them towards the right, we can just update $pos[P_i]$ to be 0 in the array so that all the elements to its right can be "shifted" to the left by 1.  
 This ensures that when we run $query(pos[x])$ after moving $P_i$ ($pos[P_i]<x$) it will be 1 less than before moving $P_i$.  
 
-Thus we just have to find  $\sum \frac{(P_i-i)(P_i+i-1)}{2}$ as we iterate $P_i$ in descending order (from $N$ to $1$) and obtain $i$ with $query(pos[P_i])$ while maintaining the fenwick tree.  
+Thus we just have to find  $\sum \frac{(P_i-j)(P_i+j-1)}{2}$ as we iterate $P_i$ in descending order (from $N$ to $1$) and obtain $j$ with $query(pos[P_i])$ while maintaining the fenwick tree.  
 
 
 
